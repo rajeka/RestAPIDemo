@@ -1,7 +1,9 @@
 package com.example.rest1;
 
-public class CartItem {
+import io.swagger.annotations.ApiModelProperty;
 
+public class CartItem {
+	@ApiModelProperty(notes="item id", name="id", required=true)
 	private int id;
 	private String name;
 	private int price;
